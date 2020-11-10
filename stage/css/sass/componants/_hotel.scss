@@ -1,0 +1,150 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+
+.hotel{
+
+    background-image: none;
+    font-family: $main-font;
+
+    .dolor{
+        background-color: #e5e5e5;
+
+        p{
+            color: #222;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .iner{
+            word-spacing: 10px;
+        }
+        h5{
+            font-size: 38px;
+        }
+        a{
+            font-size: 12px;
+            display: inline-block;
+            color: #fff;
+            background-color: $main-color;
+            border: 2px solid $main-color;
+            transition: all .5s ease-in-out;
+            padding: 15px 20px;
+            height: 50px;
+            margin-right: 20px;
+            &:hover{
+                text-decoration: none;
+                transition: all .5s ease-in-out;
+                background-color: #fff;
+                color: $main-color;
+            }
+        }
+    }
+    .dol{
+        background-color:#e5e5e5;
+    }
+
+    .wed{
+        width: 85px;
+        height: 4px;
+        border-radius: 15px;
+        background-color:$main-color ;
+    }
+    .swiper-button-prev {
+        align-items: center;
+        right: 100px;
+        background-color: $main-color;
+        color: #fff;
+        border-radius: 50%;
+        bottom: 10px !important;
+        outline: 0;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        top: auto !important;
+        left: auto !important;
+        background-image: none;
+        i{
+            font-size: 40px;
+            color: #fff;
+            margin-left: 10px;
+        }
+    }
+    .swiper-button-next {
+        right: 30px;
+        bottom: 10px !important;
+        padding: 25px;
+        border-radius: 50%;
+        display: flex;
+        outline: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: $main-color;
+        top: auto !important;
+        background-image: none;
+        color: #fff;
+        i{
+            font-size: 40px;
+            color: #fff;
+            margin-left: 15px;
+        }
+    }
+    .sid-1{
+        background-image: url(../images/hotel/summer-about-1-1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 395px;
+    }
+    .sid-2{
+        background-image: url(../images/hotel/summer-about-2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 395px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+.location{
+    .address{
+        background-color: #e5e5e5;
+    }
+    
+    i{
+        background-color: $main-color;
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+        transition: all 1s ease-in-out;
+        border-radius: 50%;
+        &:hover{
+            transition: all 1s ease-in-out;
+            background-color: #fff;
+            color: $main-color;
+        }
+    }
+
+}
+@media(max-width:768px){
+    .hotel{
+        .dol{
+            background-color: #fff;
+        }
+        .sid-1{
+            height: 148px;
+        }
+        .sid-2{
+            height: 148px;
+        }
+    }
+}

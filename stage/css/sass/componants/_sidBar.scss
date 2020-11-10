@@ -1,0 +1,185 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sidbar-nav{
+    padding: 10px 20px;
+    position: fixed;
+    width: 300px;
+    z-index: 6;
+    background-color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: -320px;
+    overflow-y: scroll;
+    .times{
+        width: 100%;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+        i{
+            cursor: pointer;
+            font-size: 30px;
+            color: $main-color;
+        }
+    }
+    .logo{
+        border-bottom: .5px solid #ccc;
+        padding-bottom: 30px;
+        text-align: center;
+        
+        img{
+            width: 80%;
+        }
+    }
+    .marg-top{
+        margin: 2rem 0;
+    }
+    .soial{
+
+        i{
+            color: $main-color;
+            font-size: 18px;
+        }
+    }
+    form{
+
+        outline: 0;
+        float: left;
+        background-color: #eee;
+        border-radius:100px
+
+    }
+    .textbox{
+        outline: 0;
+        height: 42px;
+        width: 81%;
+        line-height: 42px;
+        padding: 0 16px;
+        background-color: #eee;
+        color: #212121;
+        border: 0;
+        float: left;
+        border-radius: 100px 0 0 100px ;
+    }
+    .button-submit{
+        outline: 0;
+        background: none;
+        background-color: #fff;
+        float: left;
+        height: 42px;
+        width: 42px;
+        text-align: center;
+        line-height: 42px;
+        border: 0;
+        color: $main-color;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 16px;
+        text-rendering: auto;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        transition: background-color .4s ease;
+        border: 1px solid $main-color;
+        border-radius: 50%;
+    }
+    .horz{
+        width: 50%;
+        margin:2rem auto;
+        border-bottom: 0px solid #ddd;
+    }
+    .list-icons{
+        ul{
+            li{
+                text-align: center;
+                padding: 10px 0;
+                cursor: pointer;
+                 .non{
+                     display: none;
+                 }
+                a{
+                    display: inline-block;
+                    width: 90%;
+                    font-size: 14px;
+                    color: #584528;
+                    transition: all .25s ease-in-out;
+                    font-weight: bold;
+                    &:hover{
+                        text-decoration: none;
+                        color: $main-color;
+                    }
+                }
+                .active{
+                    color: $main-color;
+                    background-color: transparent;
+                }
+                
+                i{
+                    color: #ddd;
+                    font-size: 20px;
+                    display: inline-block;
+                    transition: all .25s ease-in-out;
+                }
+                i.rot{
+                    transform: rotate(180deg);;
+                    transition: all .25s ease-in-out;
+                }
+                .list-children{
+                    li{
+                        padding: 0;
+                        a{
+                            font-size: 13px;
+                            font-weight: 400;
+                            display: inline-block;
+                            padding: 17px 0;
+                            border-bottom: .5px solid #eee;
+                        }
+                    }
+                }
+            }
+            .looping{
+                a{
+                    color:$main-color
+                }
+            }
+            
+        }
+    }
+    .loction{
+    .we{
+        width: 52px;
+        height: 57px;
+    }
+    p{
+        color: #584528;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .colr{
+        color: $main-color;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 1rem;
+        line-height: 30px;
+        font-family:$main-font;
+    }
+    }
+}
+.sidebar{
+    left: 0px;
+    transition: all 1s ease-in-out;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 100px;
+}

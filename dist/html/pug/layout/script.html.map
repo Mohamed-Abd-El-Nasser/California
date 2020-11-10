@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["pug/layout/script.pug"],"sourcesContent":["script(src=\"../js/jquery-3.5.0.min.js\")\r\nscript(src=\"../js/popper.min.js\")\r\nscript(src=\"../js/bootstrap.bundle.min.js\")\r\nscript(src=\"../js/swiper.min.js\")\r\nscript(src=\"../js/jquery.nicescroll.js\")\r\nscript(src=\"../js/main.js\")"],"file":"script.html"}

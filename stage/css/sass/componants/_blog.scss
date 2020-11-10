@@ -1,0 +1,87 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+
+.blog{
+    font-family:$main-font;
+    background-image: none;
+    
+   .Suites{
+       h2{
+           font-size: 48px;
+           font-weight: 400px;
+       }
+      
+        .wed{
+            width: 85px;
+            height: 4px;
+            border-radius: 15px;
+            background-color:$main-color ;
+        }
+       p{
+        font-size: 16px;
+        color: #222;
+       }
+   }
+   .offer-image{
+       .blog-1{
+           background-image: url(../images/blog/summer-news-2.jpg);
+       }
+       .blog-2{
+        background-image: url(../images/blog/summer-news-1-.jpg);
+    
+       }
+       .blog-3{
+        background-image: url(../images/blog/summer-news-3.jpg);
+    
+       }
+       .fad{
+           height: 186px;
+           .shw{
+               display: flex;
+               justify-content: center;
+               height: inherit;
+               align-items: center;
+               i{
+                   font-size: 50px;
+               }
+           }
+       }
+
+   }
+   h4{
+
+    i{
+        color: #222;
+    }
+}
+h5{
+    color: $main-color;
+    transition: all .25s ease-in-out;
+    &:hover{
+        transition: all .25s ease-in-out;
+        color: #222;
+    }
+}
+.det{
+a{
+    padding: 0;
+    background-color: transparent;
+    height: auto;
+    border: none;
+    color: #222;
+    i{
+        color: $main-color;
+    }
+    &:hover{
+        color: $main-color;
+        background-color: transparent;
+    }
+}
+}
+.gr{
+    background-color: #ededed;
+    padding: 10px;
+    margin-top: -6px;
+}
+
+}

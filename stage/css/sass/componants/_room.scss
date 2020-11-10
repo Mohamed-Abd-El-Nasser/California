@@ -1,0 +1,85 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+
+section.room{
+    font-family: $main-font;
+    background-image: none;
+    
+   .Suites{
+       h2{
+           font-size: 48px;
+           font-weight: 400px;
+       }
+      
+        .wed{
+            width: 85px;
+            height: 4px;
+            border-radius: 15px;
+            background-color:$main-color ;
+        }
+       p{
+        font-size: 16px;
+        color: #222;
+       }
+   }
+  .Lorem{
+    color: #222;
+    font-weight: 400;
+    font-size: 14px;
+   }
+   .offer-image{
+
+    .f-img-1{
+        background-image: url(../images/rooms/summer-room-1.jpg);
+        height: 206px;
+    }
+    .f-img-2{
+        background-image: url(../images/rooms/summer-room-2.jpg);
+        height: 206px;
+    }
+    .f-img-3{
+        background-image: url(../images/rooms/summer-room-3.jpg);
+        height: 206px;
+    }
+    .f-img-4{
+        background-image: url(../images/rooms/summer-room-4.jpg);
+        height: 206px;
+    }
+    .r-1{
+        background-image: url(../images/blog/summer-news-2.jpg);
+        height: 206px;
+    }
+    .r-2{
+        background-image: url(../images/rooms/summer-room-6.jpg);
+        height: 206px;
+    }
+    .r-3{
+        background-image: url(../images/rooms/summer-room-7.jpg);
+        height: 206px;
+    }
+    .r-4{
+        background-image: url(../images/rooms/summer-room-8.jpg);
+        height: 206px;
+    }
+    .fad {
+         .shw1{
+            height: 206px;
+            .ro{
+                padding-top: 50px;
+                &::after{
+
+                    width: 0;
+                    height: 0;
+
+                }
+            }
+         }
+         img{
+             width: 30px;
+             height: 30px;
+         }
+    }
+
+
+   }
+}

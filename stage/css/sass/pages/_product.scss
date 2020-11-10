@@ -1,0 +1,144 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+.product{
+    .pro-tit{
+        h4{
+            font-size: 16px;
+            font-family: $second-font;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        h2{
+
+            font-size: 48px;
+            color: #222;
+        
+            font-family: $main-font;
+
+        }
+        .wed{
+            width: 85px;
+            height: 4px;
+            border-radius: 15px;
+            background-color:$main-color ;
+        }
+        p{
+            color: #222;
+            font-size: 17px;
+        }
+    }
+    .selc{
+        select{
+            height: 48px;
+            outline: 0;
+            padding-left: 5px;
+            border: 1px solid #ededed;
+            transform: translateX(-25px);
+        }
+        .card{
+            border: none;
+            img{
+                border: 1px solid #ededed;
+            }
+            .card-body{
+                padding: 0;
+                .typ{
+                    color: #222;
+                    font-weight: 700;
+                    font-size: 12px;
+                    font-family: $second-font;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    i{
+                        font-size: 16px;
+                        margin-right: 5px;
+                    }
+                    p{
+                        transition: all .5s ease-in-out;
+                        &:hover{
+                            color: $main-color;
+                            transition: all .5s ease-in-out;
+                        }
+                    }
+                }
+                h5{
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: $main-font;
+                    
+                    transition: all .5s ease-in-out;
+                    &:hover{
+                        transition: all .5s ease-in-out;
+                        color: $main-color;
+                    }
+                }
+                ul{
+                    margin-bottom: 0;
+                    li{
+                        i{
+                            margin-right: 5px;
+                        }
+                        .fill{
+                            color: $main-color;
+                        }
+                        .infill{
+                            color: #ededed;
+                        }
+                    }
+                    
+                }
+                .card-text{
+                    font-size: 20px;
+                    font-family: $main-font;
+                    margin: 0;
+                }
+                .btn-primary{
+                    background-color: $main-color;
+                    color: #fff;
+                    padding: 10px 20px;
+                    transition: all .25s ease-in-out;
+                    margin: 0;
+                    border: 0;
+                    outline: 0;
+                    font-family: $main-font;
+                    &:hover{
+                        background-color: #fff;
+                        color: $main-color;
+                        transition: all .25s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .new-01{
+        .serch{
+            .recent{
+                h2{
+                    a{
+                        font-size: 16px;
+                    }
+                }
+                ul{
+                    margin-bottom: 0;
+                }
+                .fill{
+                    color: $main-color;
+                }
+                .infill{
+                    color: #ededed;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:1023px){
+    .product{
+        .selc{
+            select{
+                transform: translateX(0);
+            }
+        }
+    }
+}

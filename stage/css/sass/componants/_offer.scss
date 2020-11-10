@@ -1,0 +1,175 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+
+.offer{
+    background-image: url(..//images/banner/summer-offers-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    font-family: $main-font;
+
+    .mt-77{
+        margin-top: -77px;
+        i{
+            font-size: 50px;
+            color: $main-color;
+        }
+    }
+    .wed{
+        width: 85px;
+        height: 4px;
+        border-radius: 15px;
+        background-color:$main-color ;
+    }
+    h2{
+        font-size: 48px;
+    }
+    p{
+        line-height: 2;
+    }
+    h4{
+        font-size: 13px;
+        font-family: $second-font;
+        font-weight: 700;
+        text-transform: uppercase;
+
+
+        &::after{
+            content: '';
+            width: 55px;
+            position: absolute;
+            height: 1px;
+            margin-left: 15px;
+            margin-top: 6px;
+            background-color: #222;
+        }
+    }
+    h5{
+        font-size: 28px;
+       
+    }
+    i{
+        margin-right: 10px;
+        color: $main-color;
+        transition: all .25s ease-in-out;
+        &:hover{
+            color: #222;
+            transition: all .25s ease-in-out;
+        }
+    }
+    .offer-image{
+        .fad{
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            cursor: pointer;
+            background-size: cover;
+            background-image: url(../images/offer/summer-offer-1.jpg);
+    
+        .shw{
+            position: absolute;
+            background-color: $main-color;
+            opacity: .8;
+            width: 100%;
+            height: 280px;
+            left: -400px;
+            padding: 30px;
+            color: white;
+            transition: all .5s ease-in-out;
+            i{
+                color: white;
+                font-size: 30px;
+                margin-top: 50px;
+                margin-bottom: 25px;
+            }
+            h4{
+                font-size: 13px;
+                &::after{
+                    background-color: #fff;
+                }
+
+            }
+            
+            &:hover{
+                text-decoration: none;
+                transition: all .5s ease-in-out;
+            }
+
+        }
+        &:hover .shw{
+            left: 0;
+            transition: all .5s ease-in-out;
+        }
+    }
+    .fad-1{
+        background-image: url(../images/offer/summer-offer-2.jpg);
+    }
+    .fad-2{
+        background-image: url(../images/offer/summer-offer-3.jpg);
+    }
+    }
+
+    .Lorem{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .det{
+        a{
+            font-size: 12px;
+            display: inline-block;
+            color: #fff;
+            background-color: $main-color;
+            border:2px solid $main-color;
+            transition: all .5s ease-in-out;
+            padding: 15px 20px;
+            height: 50px;
+            margin-right: 20px;
+
+            &:hover{
+                text-decoration: none;
+                transition: all .5s ease-in-out;
+                background-color: #fff;
+                color: $main-color;
+            }
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-family: $second-font;
+        }
+       .red{
+           color: $main-color;
+           font-size: 20px;
+           font-weight: 500px;
+           font-family: $main-font;
+       }
+    }
+
+
+
+
+
+
+
+
+
+}
+@media(max-width:769px)and(min-width:768px){
+    .offer{
+    .offer-image{
+            .fad{
+                height: 545px;
+                .shw{
+                    height: 545px;
+                    left: -728px;
+                }
+            }
+            
+    }
+}
+
+}

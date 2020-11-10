@@ -1,0 +1,162 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+.act{
+
+
+    .star{
+        font-size: $main-font;
+        &:first-child{
+            font-size: 16px;
+            font-weight: bold;
+            font-family: $second-font;
+            letter-spacing: 3px;
+        }
+        h2{
+            font-size: 48px;
+        }
+    .wed{
+        width: 85px;
+        height: 4px;
+        border-radius: 15px;
+        background-color:$main-color ;
+    }
+    &:last-child{
+        color: #222;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+.bea{
+    overflow: hidden;
+    a{
+        overflow: hidden;
+        img{
+            height: 590px;
+            width: 100%;
+        }
+        .ovly{
+            position: absolute;
+            top: 0;
+            left: -600px;
+            height: 590px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #b71233cc;
+           
+            bottom: 0;
+            right: 0;
+            transition: all .5s ease-in-out;
+            i{
+                font-size: 50px;
+                color: white;
+            }
+        }
+        &:hover .ovly{
+            left: 0;
+            transition: all .5s ease-in-out;
+        }
+    }
+    .rel{
+        background-color: #e6e6e6;
+        padding: 130px 50px;
+        .pa-50{
+           
+        }
+        .eng{
+        
+            &::after{
+                content: '';
+                width: 55px;
+                position: absolute;
+                height: 1px;
+                margin-left: 15px;
+                margin-top: 15px;
+                background-color: #222;
+
+            }
+        }
+        ul{
+            li{
+                i{
+                    color: $main-color;
+                    font-size: 40px;
+                    padding: 10px 0;
+                    margin-right: 20px;
+                    transition: all .5s ease-in-out;
+                    &:hover{
+                        color: #222;
+                        transition: all .5s ease-in-out;
+                    }
+                }
+            }
+        }
+        a{
+            font-size: 20px;
+            display: inline-block;
+            color: #fff;
+            background-color: #b71234;
+            border: 2px solid #b71234;
+            transition: all .5s ease-in-out;
+            padding: 6px 20px;
+            height: 50px;
+            margin-right: 20px;
+            
+            &:hover{
+                text-decoration: none;
+                transition: all .5s ease-in-out;
+                background-color: #fff;
+                color: #b71234;
+            }
+        }
+    }
+}
+}
+@media(max-width:1024px){
+    .act{
+        .bea{
+            .rel{
+                padding: 118px 50px;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .act{
+        .bea{
+            .rel{
+                padding: 94px 50px;
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .act{
+        .bea{
+            .rel{
+                padding: 50px 0;
+                .pa-50{
+                    padding: 0 10px;
+                }
+                a{
+                    margin-left: 10px;
+                }
+            }
+            a{
+                img{
+                    height: 300px;
+                }
+                .ovly{
+                    height: 300px;
+                }
+            }
+            .order-1{
+                order: 0 !important;
+            }
+            .order-2{
+                order: 1 !important;
+            }
+        }
+    }
+}

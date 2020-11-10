@@ -1,0 +1,71 @@
+@import "../variables/color" ;
+@import "../variables/fonts";
+
+.active{
+    background-color: #e5e5e5;
+    .container{
+        i.fa-star{
+            font-size: 50px;
+            margin-top: -77px;
+           color: $main-color;
+        }
+        .wed{
+            width: 85px;
+            height: 4px;
+            border-radius: 15px;
+            background-color:$main-color ;
+        }
+        h2{
+            font-size: 48px;
+            font-weight: 400;
+
+        }
+    }
+}
+.active-img{
+    transition: all .5s ease-in-out;
+    a{
+        position: relative;
+        height: 100%;
+        color: #fff;
+        overflow: hidden;
+        display: inline-block;
+        img{
+            height: 400;
+            width: 100%;
+        }
+        h4 {
+            font-size: 13px;
+            font-family: $second-font;
+            font-weight: 700;
+            text-transform: uppercase;
+            &::after{
+                content: '';
+                width: 55px;
+                position: absolute;
+                height: 1px;
+                margin-left: 15px;
+                margin-top: 6px;
+                background-color: #fff;
+            }
+        }
+        h5{
+            font-size: 28px;
+        }
+        .beach{
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+            width: 100%;
+            transition: all .5s ease-in-out;
+            background: -webkit-linear-gradient(bottom,rgba(0,0,0,.7),rgba(0,0,0,0));
+        }
+       
+        &:hover .beach{
+            bottom: -140px;
+            transition: all .5s ease-in-out;
+        }
+       
+    }
+    
+}

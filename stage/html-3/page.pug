@@ -1,0 +1,25 @@
+- var pageTitle = "Pages";
+doctype html
+html
+    head
+        include ../html/pug/layout/meta
+        title #{pageTitle}
+        include ../html/pug/layout/link
+        
+
+    body
+        include pug/components/sidbar
+        include pug/components/navbar
+        include pug/components/header
+        include pug/components/way
+        include ../html/pug/componants/room
+        include ../html-1/pug/components/offer
+        include pug/components/customer
+        include ../html/pug/componants/book
+        include pug/components/inst
+        
+
+
+        include ../html/pug/componants/footer
+
+        include ../html/pug/layout/script
